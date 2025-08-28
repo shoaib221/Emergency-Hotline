@@ -4,6 +4,8 @@
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 :root {
@@ -81,7 +83,6 @@ nav {
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     gap: 1rem;
     flex-grow: 1;
 }
