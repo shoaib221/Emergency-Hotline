@@ -1,5 +1,5 @@
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -23,6 +23,11 @@ html {
     width: 100vw;
     min-height: 500px;
     min-width: 600px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
 }
 
 nav {
@@ -79,21 +84,36 @@ nav {
     background-size: contain;
 }
 
+#verse {
+    display: flex; 
+    flex-direction: row-reverse; 
+    margin-left: 60px; 
+    margin-right: 60px; 
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: .5rem;
     flex-grow: 1;
+}
+
+#call-history {
+    display: block;
+    min-width: 25%;
+    
 }
 
 .grid-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: .5rem;
+    padding: .5rem;
     border-bottom: 1px solid var(--color3);
     border-radius: 1rem;
-    padding: 1rem;
+    
 }
 
 .grid-card-icon {
@@ -174,8 +194,7 @@ nav {
 @media screen and (max-width: 800px) {
 
     html {
-        
-        overflow-x: auto;
+        font-size: 12px;
     }
 
 
